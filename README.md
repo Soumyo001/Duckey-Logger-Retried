@@ -1,4 +1,4 @@
-This project is a retried project that I learned and was inspired by [CosmodiumCS's video](https://www.youtube.com/watch?v=wbprbJkiXfU&list=PL_dk67mLCSFHa5jDNvEuXuoafMHmTjn32&index=23) and their [main repository](https://github.com/PrettyBoyCosmo/DucKey-Logger).
+This project is a retried project that I learned and inspired from [CosmodiumCS's video](https://www.youtube.com/watch?v=wbprbJkiXfU&list=PL_dk67mLCSFHa5jDNvEuXuoafMHmTjn32&index=23) and their [main repository](https://github.com/PrettyBoyCosmo/DucKey-Logger).
 
 I mainly focused on the core functionality of the keylogger and am using the same license for consistency. The implementation reflects my personal learning and development.
 

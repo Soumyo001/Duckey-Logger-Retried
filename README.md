@@ -2,7 +2,9 @@ This project is a retried project that I learned and was inspired by [CosmodiumC
 
 I mainly focused on the core functionality of the keylogger and am using the same license for consistency. The implementation reflects my personal learning and development.
 
-Duckey-Logger is basically a powershell keylogger which reads keystrokes and send hourly logs .
+Duckey-Logger is basically a powershell keylogger which reads keystrokes and send hourly logs.
+
+*There is already a compiled version (`inject.bin`) of that payload. But, you can recompile or modify it if you want*
 
 ## Important Note
 Google officially turned off Less Secure App (LSA) access on May 30, 2022. Accounts created after that won't work with just an email and password. To make it work:
